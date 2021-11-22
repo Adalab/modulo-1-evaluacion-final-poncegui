@@ -1,0 +1,97 @@
+.header__menu {
+  background-color: $color-menu;
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $primary-color;
+  text-align: center;
+
+  &__text {
+    margin: 290px 15px 53px 15px;
+
+    @media all and (min-width: 768px) {
+      &__text {
+        margin: 384px 39px 45px 39px;
+      }
+    }
+
+    @media all and (min-width: 1200px) {
+      &__text {
+        margin: 290px 15px 53px 15px;
+      }
+    }
+  }
+
+  &__text--main {
+    font-family: $font-title;
+    font-size: 42px;
+    text-transform: uppercase;
+    word-spacing: 100vw;
+    line-height: 55px;
+    height: 110px;
+    width: 290px;
+
+    @media all and (min-width: 768px) {
+      &__text--main {
+        font-size: 80px;
+        height: 212px;
+        width: 690px;
+        top: 284px;
+      }
+    }
+
+    @media all and (min-width: 1200px) {
+      &__text--main {
+        font-size: 100px;
+        height: 264px;
+        width: 730px;
+        top: 384px;
+      }
+    }
+  }
+
+  &__text--phrase {
+    font-family: $font-text;
+    font-size: 16px;
+    margin-top: 0px;
+    height: 21px;
+    width: 290px;
+  }
+
+  &__text--btn {
+    background-color: $primary-color;
+    height: 45px;
+    width: 45px;
+    padding: 18px 12px 15.3px 13px;
+    border-radius: 50%;
+    margin-top: 45px;
+
+    @media all and (min-width: 768px) {
+      &__text--btn {
+        margin-top: 45px;
+      }
+    }
+
+    /*@media all and (min-width: 1200px) {
+      &__text--btn {
+        font-size: 100px;
+      }
+    }*/
+  }
+}
