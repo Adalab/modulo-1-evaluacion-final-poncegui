@@ -19,22 +19,22 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: $primary-color;
+  color: $main-color;
   text-align: center;
 
   &__text {
     margin: 290px 15px 53px 15px;
+  }
 
-    @media all and (min-width: 768px) {
-      &__text {
-        margin: 384px 39px 45px 39px;
-      }
+  @media all and (min-width: 768px) {
+    &__text {
+      margin: 384px 39px 45px 39px;
     }
+  }
 
-    @media all and (min-width: 1200px) {
-      &__text {
-        margin: 290px 15px 53px 15px;
-      }
+  @media all and (min-width: 1200px) {
+    &__text {
+      margin: 290px 15px 53px 15px;
     }
   }
 
@@ -46,27 +46,29 @@
     line-height: 55px;
     height: 110px;
     width: 290px;
+  }
 
-    @media all and (min-width: 768px) {
-      &__text--main {
-        font-size: 80px;
-        height: 212px;
-        width: 690px;
-        top: 284px;
-      }
-    }
-
-    @media all and (min-width: 1200px) {
-      &__text--main {
-        font-size: 100px;
-        height: 264px;
-        width: 730px;
-        top: 384px;
-      }
+  @media all and (min-width: 768px) {
+    &--main {
+      font-size: 80px;
+      height: 212px;
+      width: 690px;
+      top: 284px;
+      line-height: 106px;
     }
   }
 
-  &__text--phrase {
+  @media all and (min-width: 1200px) {
+    &--main {
+      font-size: 100px;
+      height: 264px;
+      width: 730px;
+      top: 384px;
+      line-height: 132px;
+    }
+  }
+
+  &--phrase {
     font-family: $font-text;
     font-size: 16px;
     margin-top: 0px;
@@ -74,8 +76,20 @@
     width: 290px;
   }
 
+  @media all and (min-width: 768px) {
+    &--phrase {
+      font-size: 24px;
+    }
+  }
+
+  /* @media all and (min-width: 1200px) {
+    &--phrase {
+      font-size: 16px;
+    }
+  }*/
+
   &__text--btn {
-    background-color: $primary-color;
+    background-color: $main-color;
     height: 45px;
     width: 45px;
     padding: 18px 12px 15.3px 13px;
