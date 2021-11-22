@@ -1,14 +1,15 @@
 .article {
-  padding-top: 30px;
   font-family: $font-text;
-  margin: 15px;
+  margin: 30px 15px 45px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: $color-text;
 
   &__small {
     font-size: 14px;
     color: $color-small-text;
+    line-height: 30px;
   }
 
   @media all and (min-width: 1200px) {
@@ -19,6 +20,9 @@
 
   &__title {
     font-size: 24px;
+    text-transform: capitalize;
+    color: $color-title;
+    line-height: 30px;
   }
   @media all and (min-width: 768px) {
     &__title {
@@ -35,6 +39,7 @@
   &__pharagraf {
     font-size: 18px;
     padding-top: 10px;
+    line-height: 30px;
   }
 
   @media all and (min-width: 768px) {
@@ -58,6 +63,7 @@
 
     &--go {
       text-decoration: none;
+      text-transform: capitalize;
       color: $secundary-color;
       font-size: 20px;
     }
