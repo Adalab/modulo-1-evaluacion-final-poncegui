@@ -1,48 +1,50 @@
 footer {
   background-color: $color-footer;
-  height: 100vh;
+  height: 465px;
   width: 100%;
+  color: $main-color;
+  text-align: center;
 
-  @mixin divs {
-    color: $main-color;
+  a img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+  }
+
+  @media all and (min-width: 768px) {
+    height: 240px;
+  }
+
+  @mixin nav {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 30px;
+    a {
+      text-decoration: none;
+      color: $main-color;
+    }
   }
 
   .box1 {
-    @include divs();
-    padding-top: 60px;
-    text-align: center;
-    &__display--list {
-      list-style: none;
-
-      a {
-        text-decoration: none;
-        color: $main-color;
-      }
-    }
+    @include nav();
   }
 
   .box2 {
-    @include divs();
-    text-align: center;
-    &__display--list {
-      list-style: none;
-
-      a {
-        text-decoration: none;
-        color: $main-color;
-      }
-    }
+    @include nav();
   }
 
   .box3 {
-    @include divs();
+    display: flex;
+    flex-direction: column;
     text-transform: lowercase;
     font-size: 14px;
     line-height: 30px;
