@@ -5,8 +5,13 @@
   flex-direction: column;
   justify-content: space-between;
   color: $color-text;
+  width: 100%;
 
-  @media all and (min-width: 1200px) {
+  @media (min-width: 768px) {
+    margin: 30px 39px 30px 39px;
+  }
+
+  @media (min-width: 1200px) {
     margin: 60px 275px 60px 275px;
   }
 
@@ -16,7 +21,7 @@
     line-height: 30px;
   }
 
-  @media all and (min-width: 1200px) {
+  @media (min-width: 1200px) {
     &__small {
       font-size: 16px;
     }
@@ -26,15 +31,15 @@
     font-size: 24px;
     text-transform: capitalize;
     color: $color-title;
-    line-height: 30px;
   }
-  @media all and (min-width: 768px) {
+
+  @media (min-width: 768px) {
     &__title {
       font-size: 26px;
     }
   }
 
-  @media all and (min-width: 1200px) {
+  @media (min-width: 1200px) {
     &__title {
       font-size: 32px;
     }
@@ -46,9 +51,16 @@
     line-height: 30px;
   }
 
-  @media all and (min-width: 768px) {
+  @media (min-width: 768px) {
     &__pharagraf {
       font-size: 20px;
+      width: 650px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__pharagraf {
+      width: 730px;
     }
   }
 
