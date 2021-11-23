@@ -1,5 +1,5 @@
 footer {
-  background-color: grey;
+  background-color: $color-footer;
   height: 100vh;
   width: 100%;
 
@@ -7,7 +7,6 @@ footer {
     color: $main-color;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     text-transform: uppercase;
     font-size: 16px;
@@ -18,13 +17,28 @@ footer {
   .box1 {
     @include divs();
     padding-top: 60px;
-    &--list {
+    text-align: center;
+    &__display--list {
       list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $main-color;
+      }
     }
   }
 
   .box2 {
     @include divs();
+    text-align: center;
+    &__display--list {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
   }
 
   .box3 {
@@ -35,7 +49,8 @@ footer {
     margin: 0;
 
     i {
-      color: red;
+      color: $heart-color;
+      margin: 3px;
     }
   }
 }
