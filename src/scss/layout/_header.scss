@@ -23,18 +23,19 @@
   text-align: center;
 
   &__text {
-    margin: 290px 15px 53px 15px;
+    margin: auto;
+    margin-bottom: 53px;
   }
 
   @media all and (min-width: 768px) {
     &__text {
-      margin: 384px 39px 45px 39px;
+      margin-bottom: 45px;
     }
   }
 
   @media all and (min-width: 1200px) {
     &__text {
-      margin: 290px 15px 53px 15px;
+      margin-bottom: 45px;
     }
   }
 
@@ -49,7 +50,7 @@
   }
 
   @media all and (min-width: 768px) {
-    &--main {
+    &__text--main {
       font-size: 80px;
       height: 212px;
       width: 690px;
@@ -59,7 +60,7 @@
   }
 
   @media all and (min-width: 1200px) {
-    &--main {
+    &__text--main {
       font-size: 100px;
       height: 264px;
       width: 730px;
@@ -68,7 +69,7 @@
     }
   }
 
-  &--phrase {
+  &__text--phrase {
     font-family: $font-text;
     font-size: 16px;
     margin-top: 0px;
@@ -77,16 +78,14 @@
   }
 
   @media all and (min-width: 768px) {
-    &--phrase {
+    &__text--phrase {
       font-size: 24px;
+      height: 32px;
+      width: 360px;
+      margin-left: 165px;
+      padding-top: 20px;
     }
   }
-
-  /* @media all and (min-width: 1200px) {
-    &--phrase {
-      font-size: 16px;
-    }
-  }*/
 
   &__text--btn {
     background-color: $main-color;

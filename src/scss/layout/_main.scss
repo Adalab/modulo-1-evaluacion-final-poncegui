@@ -6,6 +6,10 @@
   justify-content: space-between;
   color: $color-text;
 
+  @media all and (min-width: 1200px) {
+    margin: 60px 275px 60px 275px;
+  }
+
   &__small {
     font-size: 14px;
     color: $color-small-text;

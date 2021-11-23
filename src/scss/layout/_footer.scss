@@ -5,22 +5,17 @@ footer {
   color: $main-color;
   text-align: center;
 
-  a img {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 50%;
-    top: -25px;
-    transform: translateX(-50%);
-    background-color: white;
-    padding: 10px;
-  }
-
   @media all and (min-width: 768px) {
     height: 240px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 45px 39px 45px 39px;
+    text-align: start;
+  }
+
+  @media all and (min-width: 1200px) {
+    padding: 45px 370px 45px 370px;
   }
 
   @mixin nav {
@@ -28,6 +23,11 @@ footer {
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 30px;
+
+    li {
+      list-style: none;
+    }
+
     a {
       text-decoration: none;
       color: $main-color;
@@ -36,10 +36,17 @@ footer {
 
   .box1 {
     @include nav();
+
+    @media all and (min-width: 768px) {
+      order: 0;
+    }
   }
 
   .box2 {
     @include nav();
+    @media all and (min-width: 768px) {
+      order: -2;
+    }
   }
 
   .box3 {
@@ -53,6 +60,30 @@ footer {
     i {
       color: $heart-color;
       margin: 3px;
+    }
+    @media all and (min-width: 768px) {
+    }
+  }
+}
+
+.arrow {
+  &__link {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+
+    @media all and (min-width: 768px) {
+      top: -70px;
+      order: 2;
+      transform: translateX(-10%);
     }
   }
 }
