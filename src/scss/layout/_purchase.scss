@@ -6,6 +6,7 @@
   padding-bottom: 45px;
   background-color: #eff9ff;
   font-family: $font-text;
+  font-size: 18px;
 
   @media (min-width: 768px) {
     .purchase {
@@ -35,27 +36,52 @@
   }
 
   &__text {
-    grid-row: 2/4;
+    @mixin reasons {
+      text-align: center;
+      grid-row: span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 70px 45px 70px;
+    }
 
     &--1 {
-      margin-bottom: 45px;
+      @include reasons();
     }
+
     &--2 {
-      margin-bottom: 45px;
+      @include reasons();
     }
     &--3 {
-      margin-bottom: 45px;
+      @include reasons();
     }
 
     @media (min-width: 768px) {
       grid-column: 1/4;
       display: flex;
       font-size: 20px;
+      font-weight: normal;
       justify-content: space-between;
-      margin: 39px;
+      margin: 0px;
+
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        padding: 10px;
+        line-height: 30px;
+        width: 212px;
+      }
     }
+
     @media (min-width: 1200px) {
-      margin: 85px;
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        width: 350px;
+      }
     }
   }
 

@@ -4,13 +4,19 @@
   color: $main-color;
   text-align: center;
   font-family: $font-text;
+  padding: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 
   @media (min-width: 768px) {
+    display: flex;
     flex-direction: row-reverse;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 0;
   }
 
   &__btn {
@@ -26,8 +32,6 @@
     top: -22.5px;
     left: 50%;
     transform: translateX(-50%);
-    @media (min-width: 768px) {
-    }
   }
 
   &__navigation {
@@ -38,6 +42,13 @@
       justify-content: space-around;
       text-align: start;
     }
+
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: flex-start;
+      width: 700px;
+    }
+
     @mixin nav {
       text-transform: uppercase;
       font-size: 16px;
@@ -61,44 +72,21 @@
       @include nav();
     }
   }
-}
-
-/*
-
-
-  
-
-    @media (min-width: 768px) {
-      display: flex;
-      position: relative;
-      right: 49%;
-      top: -100px;
-    }
-  }
-
-  
-
-    @media (min-width: 768px) {
-      justify-content: center;
-    }
-
-    
-  }
 
   &__heart {
-    background-color: chartreuse;
+    @media (min-width: 768px) {
+      text-align: start;
+      display: flex;
+      flex-wrap: wrap;
+      transform: translateY(-140%);
+    }
+    @media (min-width: 1200px) {
+    }
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 210px;
     i {
       color: $heart-color;
     }
-
-    @media (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      margin: 40px;
-      position: relative;
-      top: -50px;
-      text-align: start;
-    }
-  }*/
+  }
+}
