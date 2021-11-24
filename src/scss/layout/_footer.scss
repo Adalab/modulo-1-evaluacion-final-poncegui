@@ -32,6 +32,20 @@
     top: -22.5px;
     left: 50%;
     transform: translateX(-50%);
+
+    a {
+      animation: btn 0.8s ease infinite;
+    }
+
+    @keyframes btn {
+      from {
+        transform: scale(3) rotate(-150deg);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
   }
 
   &__navigation {
