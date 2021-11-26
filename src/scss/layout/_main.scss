@@ -15,6 +15,11 @@
     margin: 60px 0px 60px 275px;
   }
 
+  .change {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   &__small {
     font-size: 14px;
     color: $color-small-text;
@@ -71,6 +76,7 @@
   }
 
   &__link {
+    background-color: $secundary-color;
     border: 2px solid $secundary-color;
     color: secundary-color;
     height: 45px;
@@ -83,10 +89,14 @@
     justify-content: center;
     align-items: center;
 
+    @media (min-width: 768px) {
+      margin: 20px 0px;
+    }
+
     &--go {
       text-decoration: none;
       text-transform: capitalize;
-      color: $secundary-color;
+      color: $main-color;
       font-size: 20px;
     }
   }
