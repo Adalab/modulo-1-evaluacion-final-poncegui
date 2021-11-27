@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 1f;
   grid-template-rows: 10% 1fr 1fr 1fr 15%;
+  align-items: center;
+  text-align: center;
 
   width: 100%;
   text-align: center;
@@ -32,8 +34,8 @@
       grid-row: 1/2;
       font-size: 26px;
     }
-    @media (min-width: 768px) {
-      font-size: 20px;
+    @media (min-width: 1200px) {
+      font-size: 32px;
     }
   }
 
@@ -41,24 +43,22 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+
     h3 {
       font-family: $font-title;
-      font-size: 20px;
-    }
-    p {
-      font-size: 20px;
     }
 
     @media (min-width: 768px) {
       grid-row: 2/3;
       grid-column: 1/2;
-      font-size: 26px;
+      font-size: 20px;
       width: 212px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       font-size: 32px;
     }
   }
+
   &__text2 {
     text-align: center;
     h3 {
@@ -111,8 +111,8 @@
     padding: 5px 5px;
     width: 184px;
     height: 45px;
-    margin: auto;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       background-color: $main-color;
@@ -125,8 +125,10 @@
     }
 
     @media (min-width: 768px) {
-      grid-row: span 3;
-      grid-column: 1/4;
+      grid-row: 3/4;
+      grid-column: 2/3;
+      align-items: center;
+      justify-content: center;
     }
 
     &--btn {
