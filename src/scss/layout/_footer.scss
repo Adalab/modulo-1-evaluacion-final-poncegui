@@ -15,14 +15,14 @@
     flex-direction: row-reverse;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     padding-top: 0;
   }
 
   &__btn:hover {
-    transform: scale(1.2);
-    transition: 0.2s ease;
-
+    transform: translateY(-5px);
+    transition: all 0.5s ease-out;
+    /*
     a {
       animation: btn 0.8s ease;
     }
@@ -35,7 +35,7 @@
       to {
         transform: scale(1);
       }
-    }
+    }*/
   }
 
   &__btn {
@@ -49,8 +49,8 @@
     align-items: center;
     position: absolute;
     top: -22.5px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 48%;
+    /*transform: translateX(-50%);*/
   }
 
   &__navigation {
@@ -79,6 +79,9 @@
         a {
           text-decoration: none;
           color: $main-color;
+          &:hover {
+            color: $secundary-color;
+          }
         }
       }
     }
@@ -93,12 +96,16 @@
   }
 
   &__heart {
+    &--copy {
+      line-height: 30px;
+    }
+
     @media (min-width: 768px) {
       text-align: start;
       display: flex;
       flex-wrap: wrap;
-      transform: translateY(-140%);
     }
+
     @media (min-width: 1200px) {
     }
     display: flex;
