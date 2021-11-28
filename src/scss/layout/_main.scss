@@ -8,25 +8,23 @@
   width: 60%;
 
   @media (min-width: 768px) {
-    margin: 30px 39px 30px 39px;
+    padding-left: 39px;
   }
 
   @media (min-width: 1200px) {
-    // margin: 60px 0px 60px 275px;
+    padding-left: 275px;
   }
 
   &__small {
     font-size: 14px;
     color: $color-small-text;
     line-height: 30px;
-    margin: 0px 0px 0px 15px;
-    padding-left: 39px;
+    font-weight: normal;
   }
 
   @media (min-width: 1200px) {
     &__small {
       font-size: 16px;
-      padding-left: 275px;
     }
   }
 
@@ -35,21 +33,19 @@
     text-transform: capitalize;
     color: $color-title;
     width: 290px;
-    margin: 5px 0px 0px 15px;
+    margin: 5px 0px;
   }
 
   @media (min-width: 768px) {
     &__title {
       width: 100%;
       font-size: 26px;
-      padding-left: 39px;
     }
   }
 
   @media (min-width: 1200px) {
     &__title {
       font-size: 32px;
-      padding-left: 275px;
     }
   }
 
@@ -58,21 +54,18 @@
     padding-top: 10px;
     line-height: 30px;
     width: 290px;
-    margin: 0px 0px 0px 15px;
   }
 
   @media (min-width: 768px) {
     &__pharagraf {
       font-size: 20px;
       width: 650px;
-      padding-left: 39px;
     }
   }
 
   @media (min-width: 1200px) {
     &__pharagraf {
-      padding-left: 275px;
-      width: 1050px;
+      width: 730px;
     }
   }
 
@@ -96,6 +89,7 @@
       font-size: 20px;
       border-radius: 50px;
       border: 1px solid $main-color;
+      box-shadow: 0 0 15px rgb(236, 164, 8);
     }
 
     &--go {
@@ -107,7 +101,7 @@
 
       &:hover {
         color: $main-color;
-        background-color: 0.5s linear;
+        background-color: 0.8s linear;
       }
     }
   }

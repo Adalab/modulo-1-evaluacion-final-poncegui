@@ -8,6 +8,7 @@
   align-items: center;
   &:hover {
     background-color: $secundary-color;
+    background-color: 0.5s linear;
   }
 }
 
