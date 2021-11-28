@@ -23,14 +23,18 @@
     align-items: center;
   }
 
+  //  -Main title-
   &__title {
     grid-row: 1/2;
     font-size: 24px;
     font-family: $font-title;
     line-height: 30px;
     height: 50px;
+    width: 290px;
+    margin-top: auto;
 
     @media (min-width: 768px) {
+      width: 100%;
       grid-column: 1/4;
       grid-row: 1/2;
       font-size: 26px;
@@ -40,9 +44,12 @@
     }
   }
 
+  // -3 reasons boxes-
+
   &__text1 {
     text-align: center;
     margin: auto;
+    width: 180px;
     h3 {
       font-family: $font-title;
       font-size: 18px;
@@ -58,12 +65,13 @@
         margin-top: 15px;
       }
     }
+
     @media (min-width: 1200px) {
       h3 {
         font-size: 24px;
-        p {
-          font-size: 20px;
-        }
+      }
+      p {
+        font-size: 20px;
       }
     }
   }
@@ -71,6 +79,7 @@
   &__text2 {
     text-align: center;
     margin: auto;
+    width: 180px;
     h3 {
       font-family: $font-title;
       font-size: 18px;
@@ -101,6 +110,7 @@
   &__text3 {
     text-align: center;
     margin: auto;
+    width: 180px;
     h3 {
       font-family: $font-title;
       font-size: 18px;
@@ -130,6 +140,8 @@
     }
   }
 
+  //  Button -more reasons-
+
   &__nav {
     background-color: $secundary-color;
     grid-row: 5;
@@ -138,7 +150,7 @@
     font-family: $font-text;
     color: $main-color;
     border-radius: 22.5px;
-    padding: 5px 5px;
+    padding: 7px 5px 5px 5px;
     width: 184px;
     height: 45px;
     justify-content: center;
